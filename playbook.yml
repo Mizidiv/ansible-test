@@ -1,0 +1,4 @@
+- name: ping-pong
+  hosts: test1
+  tasks:
+    - ping:
