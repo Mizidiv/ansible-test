@@ -1,4 +1,5 @@
 - name: ping-pong
-  hosts: test1
-  tasks:
-    - ping:
+  hosts: group_server1
+  
+  roles:
+   - osup
