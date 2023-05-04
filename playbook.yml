@@ -1,5 +1,0 @@
-- name: ping-pong
-  hosts: group_server1
-  roles:
-   - osup
-  become: true

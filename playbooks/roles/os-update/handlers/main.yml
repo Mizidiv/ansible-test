@@ -1,0 +1,6 @@
+---
+- name: "reboot host"
+  listen: "reboot host"
+  reboot:
+    reboot_timeout: "120"
+...

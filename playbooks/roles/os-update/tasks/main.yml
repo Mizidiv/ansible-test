@@ -1,0 +1,15 @@
+---
+- name: os_upgrade
+  yum:
+    name: '*'
+    state: latest
+    exclude: "pip"
+  notify: "reboot host"
+  
+- name: Remove old kernels
+  yum:
+    name: "{{ item }}"
+    state: absent
+  with_items: "{{ ansible_facts['kernel'][:-2] }}"
+  when: ansible_facts['kernel'] | length > 2
+...

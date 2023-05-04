@@ -1,9 +1,0 @@
----
-# tasks file for osup
-- name: tset_ping
-  ping:
-
-- name: os_upgrade
-  yum:
-    name: '*'
-    state: latest
