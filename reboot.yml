@@ -1,0 +1,7 @@
+- name: reboot
+  hosts: group_server1
+  become: true
+  tasks:
+   - name: reboot CentosOS
+     reboot:
+       msg: "выполнена перезагрузка сервера"
